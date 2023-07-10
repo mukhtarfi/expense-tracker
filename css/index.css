@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    max-width: 480px; /* Mobile viewport width */
+    margin: auto;
+}
+
+header {
+    /*background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );*/
+    background-image: linear-gradient( 64.5deg,  rgba(245,116,185,1) 14.7%, rgba(89,97,223,1) 88.7% );
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-container{
+    padding: 0 20px;
+}
+
+#expense-form, #income-form, #new-user-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+#new-user-form{
+    margin-top: 0;
+}
+
+#new-user-form input[type="text"],
+#new-user-form input[type="password"],
+#expense-form input[type="text"],
+#expense-form input[type="number"],
+#income-form input[type="text"],
+#income-form input[type="number"] {
+    flex: 1;
+    margin: 10px;
+    /*margin-right: 10px;*/
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+  
+}
+
+#expense-form button, #income-form button, #new-user-form button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+    /*background-color: #333;*/
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.expense-list {
+    margin: 20px 10px;
+}
+
+.expense-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+form{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}

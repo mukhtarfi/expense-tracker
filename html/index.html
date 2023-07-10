@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5948/5948020.png">
+    <script src="https://kit.fontawesome.com/2e4784bf23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bottom-nav.css">
+    <script type="module" src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+
+    <div class="main-container">
+        <!--<form id="new-user-form">
+            <input type="text" id="new-username" placeholder="Enter new username">
+            <input type="password" id="new-user-password" placeholder="e.g. abc123">
+            <button id="add-new-user">Add New User</button>
+        </form>-->
+
+        <section class="balance-info">
+            <div id="balance">
+                <h3>Your Balance</h3>
+                <p>RM0.00</p>
+            </div>
+            <div id="income">
+                <h3>Total Income</h3>
+                <p>RM0.00</p>
+            </div>
+            <div id="expense">
+                <h3>Total Expenses</h3>
+                <p>RM0.00</p>
+            </div>
+        </section>
+    
+        <form id="expense-form">
+            <input type="text" id="expense-title" placeholder="Enter expense title">
+            <input type="number" id="expense-amount" placeholder="Enter amount">
+            <select name="expense-category" id="expense-category">
+                <option value="Eating Out">Eating Out</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+            <input type="number" id="expense-amount" placeholder="Enter amount">
+            <button id="add-expense">Add Expense</button>
+        </form>
+    
+        <form id="income-form">
+            <input type="text" id="income-title" placeholder="Enter income title">
+            <input type="number" id="income-amount" placeholder="Enter amount">
+            <select name="income-category" id="income-category">
+                <option value="Salary">Eating Out</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+            <button id="add-income">Add Income</button>
+        </form>
+    
+        <section id="expense-section">
+            <h3>Expense List</h3>
+            <ul id="expense-list">
+                <li>Lunch RM7.00</li>
+                <li>Drink RM6.00</li>
+            </ul>
+        </section>
+    </div>
+
+    <nav id="bottom-nav">
+        <a href="./index.html" class="nav-item selected">
+            <i class="fa-solid fa-money-bill-transfer icons"></i>
+            <span>Home</span>
+        </a>
+        <a href="./transactions.html" class="nav-item">
+            <i class="fa-solid fa-receipt icons"></i>
+            <span>Transactions</span>
+        </a>
+        <a href="./statistics.html" class="nav-item">
+            <i class="fa-solid fa-chart-pie icons"></i>
+            <span>Statistics</span>
+        </a>
+        <a href="./categories.html" class="nav-item">
+            <i class="fa-solid fa-boxes-stacked icons"></i>
+            <span>Categories</span>
+        </a>
+        <a href="./accounts.html" class="nav-item">
+            <i class="fa-solid fa-user-group icons"></i>
+            <span>Accounts</span>
+        </a>
+    </nav>
+</body>
+</html>
