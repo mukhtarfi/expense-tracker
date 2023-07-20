@@ -28,7 +28,7 @@ loginForm.addEventListener('submit', (event) => {
       // store the current user into our localStorage to allow the data to persist'
       localStorage.setItem('currentUser', JSON.stringify(user)) //key, variable
 
-      window.location.href = './html/index.html';
+      window.location.href = './index.html';
     } else {
       alert('Incorrect password. Please try again.');
     }
